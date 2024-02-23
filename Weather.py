@@ -1,6 +1,9 @@
 from tkinter import *
 from tkinter import ttk
 import requests,json
+import random
+import randomcolor
+color=randomcolor.RandomColor().generate()
 def get_data():
     city=city_name.get()
     if not city:
@@ -24,12 +27,12 @@ def get_data():
             pres1.config(text="")
 window=Tk()
 window.title('Prepleaf by Masai')
-window.config(bg='Light Green') 
+window.config(bg=color) 
 window.geometry("700x500")
 label_name=Label(window,bg='Sky blue',text='Welcome in Weather App',font=('Time New Roman',30,'bold'))
 label_name.place(x=25,y=40,height=40,width=625)
 city_name=StringVar()
-lst_name=["Andhra Pradesh","Arunachal Pradesh ","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Andaman and Nicobar Islands","Chandigarh","Dadra and Nagar Haveli","Daman and Diu","Lakshadweep","National Capital Territory of Delhi","Puducherry"]
+lst_name=["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Andaman and Nicobar Islands","Chandigarh","Dadra and Nagar Haveli","Daman and Diu","Lakshadweep","National Capital Territory of Delhi","Puducherry"]
 lst = ttk.Combobox(window, textvariable=city_name, 
 values=lst_name, font=('Time New Roman', 25, 'bold'))
 lst.place(x=25,y=100,height=40,width=450)
@@ -48,13 +51,13 @@ wd.place(x=30,y=255,height=30,width=200)
 wd1=Label(window,text='',
                    font=('Time New Roman',16))
 wd1.place(x=250,y=255,height=30,width=200)
-temp=Label(window,text='Temperature °C',
+temp=Label(window,text='Temperature(°C)',
                    font=('Time New Roman',20))
 temp.place(x=30,y=300,height=30,width=200)
 temp1=Label(window,text='',
                    font=('Time New Roman',20))
 temp1.place(x=250,y=300,height=30,width=200)
-pres=Label(window,text='Pressure',
+pres=Label(window,text='Pressure(mb)',
                    font=('Time New Roman',20))
 pres.place(x=30,y=350,height=30,width=200)
 pres1=Label(window,text='',
