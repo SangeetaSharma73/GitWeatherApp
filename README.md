@@ -38,15 +38,19 @@ To install the Weather Python GUI App, follow these steps:
     ```
         pip install random 
     ```
+
     ```
         pip install tkinter
     ```
+
     ```
         pip install request
     ```
+
     ```
         pip install json
     ```
+    
 4.Run the application:
     
     ```
