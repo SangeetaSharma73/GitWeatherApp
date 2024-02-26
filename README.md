@@ -28,11 +28,13 @@ To install the Weather Python GUI App, follow these steps:
    ``` 
 
 2.Navigate to the project directory:
+    
     ```
         cd GITWEATHERAPP
     ```    
 
-3.Install the required dependencies:
+3.Install the required module:
+    
     ```
         pip install random 
     ```
@@ -46,26 +48,30 @@ To install the Weather Python GUI App, follow these steps:
         pip install json
     ```
 4.Run the application:
+    
     ```
         python Weather.py
     ```
 **Usage**
+
 Launch the application by running Weather.py.
 Enter the name of the city or location for which you want to check the weather.
 Click on the "Get Weather" button.
 The application will display the current weather conditions and forecast for the specified location.
 
-**Screenshots**
 ![Output](Output.png)
 
 **Contributing**
+
 Contributions are welcome! If you would like to contribute to the Weather Python GUI App, please follow these guidelines:
 
 **Fork the repository**
+
 Create a new branch for your feature or bug fix.
 Make your changes and ensure the code passes any existing tests.
 Test the application thoroughly.
 Submit a pull request with a clear description of your changes.
 
 **Contact**
+
 If you have any questions, suggestions, or issues regarding the Weather Python GUI App, feel free to contact us at sangeeta136428sharma@gmail.com. We appreciate your feedback!
