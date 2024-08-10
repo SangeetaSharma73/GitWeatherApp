@@ -64,6 +64,7 @@ Click on the "Get Weather" button.
 The application will display the current weather conditions and forecast for the specified location.
 
 ![Output](Output.png)
+![weather](weather.png)
 
 **Contributing**
 
